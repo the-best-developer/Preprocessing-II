@@ -1,5 +1,10 @@
 .home {
 
+  @media ( @mobile ) {
+    width: 95%;
+    margin: 0 auto;
+  }
+
   .heading-section {
 
     p {
@@ -19,7 +24,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    @media ( max-width: 500px ) {
+    @media ( @mobile ) {
       flex-direction: column;
     }
     
@@ -27,7 +32,7 @@
       width: 48%;
       padding-right: 1%;
 
-      @media ( max-width: 500px ) {
+      @media ( @mobile ) {
         width: 100%;
       }
     }
@@ -36,7 +41,7 @@
       width: 48%;
       padding-left: 1%;
 
-      @media ( max-width: 500px ) {
+      @media ( @mobile ) {
         width: 100%;
       }
 
@@ -50,7 +55,7 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
-    @media ( max-width: 500px ) {
+    @media ( @mobile ) {
       flex-direction: column-reverse;
     }
 
