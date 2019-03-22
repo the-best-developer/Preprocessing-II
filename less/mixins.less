@@ -1,1 +1,20 @@
 // Mixins in here
+
+.button (@bg-color, @txt-color) {
+    height: 45px;
+    width: 90%;
+    border-radius: 13px;
+    padding-top: 15px;
+    font-size: 1.8rem;
+    background-color: @bg-color;
+    text-align: center;
+
+    @media ( @mobile ) {
+      width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      color: @txt-color;
+    }
+}
