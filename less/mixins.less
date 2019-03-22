@@ -1,1 +1,17 @@
 // Mixins in here
+
+.button (@bg-color, @txt-color) {
+    height: 45px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 13px;
+    padding-top: 15px;
+    font-size: 1.8rem;
+    background-color: @bg-color;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: @txt-color;
+    }
+}
